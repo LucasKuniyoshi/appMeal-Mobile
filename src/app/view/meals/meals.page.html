@@ -1,0 +1,26 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Democratic Gastronomy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-searchbar [(ngModel)]="searchTerms" (ionChange)="search()"></ion-searchbar>
+  <ion-item>
+   <ion-label>Select a category food</ion-label>
+   <ion-select [(ngModel)]="category" (ionChange)="search()"></ion-select>
+   <ion-select-option value="">All</ion-select-option>
+   <ion-select-option value="vegan">Vegan</ion-select-option>
+   <ion-select-option value="seafood">Seafood</ion-select-option>
+
+
+
+
+
+
+  </ion-item>
+
+
+
+
+</ion-content>
